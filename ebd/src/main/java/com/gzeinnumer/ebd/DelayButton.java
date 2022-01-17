@@ -10,7 +10,6 @@ public class DelayButton implements View.OnClickListener {
 
     private View.OnClickListener onClickListener;
     private Button button;
-    private String text;
     private int delay = 2000;
     private CountDownTimer countDownTimer;
 
@@ -29,7 +28,6 @@ public class DelayButton implements View.OnClickListener {
     public void onClick(View view) {
         onClickListener.onClick(view);
         button.setEnabled(false);
-        text = button.getText().toString();
 
         countDownTimer = new CountDownTimer(delay, 1000) {
             public void onTick(long millisUntilFinished) {
