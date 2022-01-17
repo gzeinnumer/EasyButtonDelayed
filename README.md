@@ -48,12 +48,11 @@ dependencies {
 ---
 # Feature List
 
-- [x] [NumberForm](#NumberForm)
+- [x] [DelayButton](#DelayButton)
+- [x] [DelayTabLayout](#DelayTabLayout)
 
 #
-#### NumberForm
-
-- DelayButton
+#### DelayButton
 
 Default Delay 2 second (2000)
 
@@ -79,7 +78,7 @@ int delay = 1000;
 button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {}, delay));
 ```
 
-- DelayTabLayout
+#### DelayTabLayout
 
 Default Delay 2 second (2000)
 
@@ -109,13 +108,6 @@ Custom Delay 1 second (1000)
 ```java
 int delay = 1000;
 tabLayout.addOnTabSelectedListener(new DelayTab(tabLayout, new TabLayout.OnTabSelectedListener() {}, delay));
-```
-
-
----
-
-```
-You can user all of attribute in EditText inside NumberForm.
 ```
 
 ---
