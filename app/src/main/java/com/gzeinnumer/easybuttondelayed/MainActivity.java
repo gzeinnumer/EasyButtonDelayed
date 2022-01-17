@@ -19,31 +19,17 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.btn);
 
         int delay = 1000;
-        boolean counter = true;
         button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
             }
         }));
-//        button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
-//            }
-//        }, delay));
-
-//        button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
-//            }
-//        }, counter));
-//        button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
-//            }
-//        }, delay, counter));
+        button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
+            }
+        }, delay));
     }
 }
