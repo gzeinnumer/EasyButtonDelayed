@@ -7,18 +7,18 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.Objects;
 
-public class DelayTab implements TabLayout.OnTabSelectedListener{
+public class DelayTabLayout implements TabLayout.OnTabSelectedListener{
     private TabLayout tabLayout;
     private CountDownTimer countDownTimer;
     private TabLayout.OnTabSelectedListener onTabSelectedListener;
     private int delay = 2000;
 
-    public DelayTab(TabLayout tabLayout, TabLayout.OnTabSelectedListener onTabSelectedListener) {
+    public DelayTabLayout(TabLayout tabLayout, TabLayout.OnTabSelectedListener onTabSelectedListener) {
         this.tabLayout = tabLayout;
         this.onTabSelectedListener = onTabSelectedListener;
     }
 
-    public DelayTab(TabLayout tabLayout, TabLayout.OnTabSelectedListener onTabSelectedListener, int delay) {
+    public DelayTabLayout(TabLayout tabLayout, TabLayout.OnTabSelectedListener onTabSelectedListener, int delay) {
         this.tabLayout = tabLayout;
         this.onTabSelectedListener = onTabSelectedListener;
         this.delay = delay;

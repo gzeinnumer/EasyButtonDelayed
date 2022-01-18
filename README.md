@@ -78,18 +78,19 @@ int delay = 1000;
 button.setOnClickListener(new DelayButton(button, new View.OnClickListener() {}, delay));
 ```
 
+#
 #### DelayTabLayout
 
 Default Delay 2 second (2000)
 
 ```java
-tabLayout.addOnTabSelectedListener(new DelayTab(tabLayout, new TabLayout.OnTabSelectedListener() {}));
+tabLayout.addOnTabSelectedListener(new DelayTabLayout(tabLayout, new TabLayout.OnTabSelectedListener() {}));
 ```
 
 ```java
 TabLayout tabLayout = findViewById(R.id.tab_layout);
 
-tabLayout.addOnTabSelectedListener(new DelayTab(tabLayout, new TabLayout.OnTabSelectedListener() {
+tabLayout.addOnTabSelectedListener(new DelayTabLayout(tabLayout, new TabLayout.OnTabSelectedListener() {
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         Toast.makeText(getApplicationContext(), "test aja", Toast.LENGTH_SHORT).show();
@@ -107,7 +108,7 @@ Custom Delay 1 second (1000)
 
 ```java
 int delay = 1000;
-tabLayout.addOnTabSelectedListener(new DelayTab(tabLayout, new TabLayout.OnTabSelectedListener() {}, delay));
+tabLayout.addOnTabSelectedListener(new DelayTabLayout(tabLayout, new TabLayout.OnTabSelectedListener() {}, delay));
 ```
 
 ---
