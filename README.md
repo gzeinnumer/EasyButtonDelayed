@@ -1,5 +1,5 @@
 
-|<img src="/preview/preview1.png" width="300"/>|<img src="/preview/preview2.png" width="300"/>|
+|<img src="/preview/preview1.jpg" width="300"/>|<img src="/preview/preview2.jpg" width="300"/>|
 |--|--|
 
 <h1 align="center">
