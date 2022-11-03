@@ -1,6 +1,6 @@
-<pre>
-<img src="https://github.com/gzeinnumer/NumberForm/blob/master/preview/example3.gif" width="300">
-</pre>
+
+|<img src="/preview/preview1.png" width="300"/>|<img src="/preview/preview2.png" width="300"/>|
+|--|--|
 
 <h1 align="center">
     EasyButtonDelayed
