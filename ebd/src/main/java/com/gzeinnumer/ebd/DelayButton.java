@@ -30,6 +30,8 @@ public class DelayButton implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        button.setEnabled(false);
+
         if (!isTimeAutomatic(view.getContext())) {
             Toast.makeText(view.getContext(), "Tanggal dan waktu tidak valid, silahkan aktifkan \"Tanggal dan Waktu Otomatis\" serta \"Time Zone Otomatis\" ", Toast.LENGTH_SHORT).show();
             return;
@@ -40,7 +42,6 @@ public class DelayButton implements View.OnClickListener {
         }
 
         onClickListener.onClick(view);
-        button.setEnabled(false);
 
         countDownTimer = new CountDownTimer(delay, 1000) {
             public void onTick(long millisUntilFinished) {
